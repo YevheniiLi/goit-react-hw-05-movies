@@ -5,14 +5,19 @@ export const MovieData = styled.div`
 `;
 
 export const AddListItem = styled.li`
-  color: ${p => p.theme.colors.pretitle};
+  color: ${p => p.theme.colors.red};
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
+  list-style: none;
+  text-decoration: none;
+  &.active {
+    color: ${p => p.theme.colors.green};
+  }
 `;
 
 export const MoveInfoTitle = styled.h2`
-  color: ${p => p.theme.colors.accent};
+  color: ${p => p.theme.colors.red};
   text-transform: uppercase;
   display: flex;
   justify-content: center;

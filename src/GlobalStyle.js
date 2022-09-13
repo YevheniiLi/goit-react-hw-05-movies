@@ -20,9 +20,10 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
   }
 
-  ul,ol {
+  ul,ol,li{
     padding: 0;
     margin: 0;
     list-style: none;
+    text-decoration: none;
   }
 `;

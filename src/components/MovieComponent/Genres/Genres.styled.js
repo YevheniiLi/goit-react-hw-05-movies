@@ -6,5 +6,5 @@ export const GenresList = styled.ul`
   text-transform: uppercase;
   font-weight: 500;
   font-size: 12px;
-  color: ${p => p.theme.colors.accent};
+  color: ${p => p.theme.colors.black};
 `;

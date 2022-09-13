@@ -2,6 +2,7 @@ import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { Container } from 'components/Container/MainContainer';
 import { LoaderSpinner } from 'components/Loader/Loader';
+import { GlobalStyle } from 'GlobalStyle';
 
 const Home = lazy(() => import('pages/Home/Home'));
 const Movies = lazy(() => import('pages/Movies/Movies'));
@@ -25,6 +26,7 @@ export const App = () => {
           </Route>
         </Routes>
       </Suspense>
+      <GlobalStyle/>
     </div>
   );
 };

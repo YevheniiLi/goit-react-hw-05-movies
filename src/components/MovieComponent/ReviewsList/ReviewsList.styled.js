@@ -5,9 +5,9 @@ export const ReviewsListItem = styled.li`
     margin-bottom: 20px;
   }
   font-size: 10px;
-  color: ${p => p.theme.colors.text};
+  color: ${p => p.theme.colors.black};
 `;
 
 export const ReviewerTitle = styled.h4`
-  color: ${p => p.theme.colors.accent};
+  color: ${p => p.theme.colors.black};
 `;
