@@ -6,8 +6,8 @@ import { LoaderSpinner } from 'components/Loader/Loader';
 const Home = lazy(() => import('pages/Home/Home'));
 const Movies = lazy(() => import('pages/Movies/Movies'));
 const DetailsMovies = lazy(() => import('pages/DetailsMovies/DetailsMovies'));
-const Cast = lazy(() => import('pages/DetailsMovies/Cast'));
-const Reviews = lazy(() => import('pages/DetailsMovies/Reviews'));
+const Cast = lazy(() => import('pages/Cast/Cast'));
+const Reviews = lazy(() => import('pages/Reviews/Reviews'));
 
 export const App = () => {
   return (

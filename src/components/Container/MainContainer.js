@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
-import { ContanerMain } from './MainContainer.styled';
+import { MainContainer } from './MainContainer.styled';
 import { Header } from 'components/Header/Header';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -8,9 +8,9 @@ export const Container = () => {
   return (
     <div>
       <Header />
-      <ContanerMain>
+      <MainContainer>
         <Outlet />
-      </ContanerMain>
+      </MainContainer>
       <ToastContainer
         position="top-center"
         autoClose={3000}

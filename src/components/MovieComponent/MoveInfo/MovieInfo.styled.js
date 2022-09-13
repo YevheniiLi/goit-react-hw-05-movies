@@ -21,12 +21,12 @@ export const MovieInfoTitle = styled.h2`
   color: ${p => p.theme.colors.accent};
 `;
 
-export const MovieInfoBlock = styled.div`
+export const MovieInfoWrapper = styled.div`
   margin-bottom: 10px;
   color: ${p => p.theme.colors.info_block};
 `;
 
-export const PreInfoTitle = styled.h5`
+export const MoviePreTitle = styled.h5`
   text-transform: uppercase;
   color: ${p => p.theme.colors.pretitle};
 `;

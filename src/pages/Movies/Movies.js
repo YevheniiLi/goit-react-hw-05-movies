@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import { getSearchMovies } from 'api/api';
-import { MoviesList } from 'components/MovieList/MoviesList';
-import { MainTitle } from 'components/Styles/MainTitle.styled';
-import { SearchForm } from 'components/SearchForm/SearchForm';
+import { getSearchMovies } from 'components/api/api';
+import { MoviesList } from 'components/MovieComponent/MovieList/MoviesList';
+import { MainTitle } from 'components/Container/MainTitle.styled';
+import { SearchBar } from 'components/SearchBar/SearchBar';
 import { MoviesContainer } from './Movies.styled';
 
 export default function Movies() {
@@ -37,7 +37,7 @@ export default function Movies() {
   return (
     <MoviesContainer>
       <MainTitle>search movie</MainTitle>
-      <SearchForm onSubmit={handlerSubmit} value={searchParams.get('name')} />
+      <SearchBar onSubmit={handlerSubmit} value={searchParams.get('name')} />
       <MoviesList movies={searchResult} />
     </MoviesContainer>
   );

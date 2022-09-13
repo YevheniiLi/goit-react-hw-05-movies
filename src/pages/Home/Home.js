@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { getTrending } from 'api/api';
-import { MoviesList } from 'components/MovieList/MoviesList';
-import { MainTitle } from 'components/Styles/MainTitle.styled';
+import { getTrending } from 'components/api/api';
+import { MoviesList } from 'components/MovieComponent/MovieList/MoviesList';
+import { MainTitle } from 'components/Container/MainTitle.styled';
 
 export default function Home() {
   const [trendingMovies, setTrendingMovies] = useState([]);

@@ -1,13 +1,13 @@
 import { useState, useEffect, Suspense } from 'react';
 import { useParams, Link, Outlet, useLocation } from 'react-router-dom';
-import { getMoveDetails } from 'api/api';
+import { getMoveDetails } from 'components/api/api';
 // import { MovieInfoBlock } from 'components/MoveInfo/MovieInfo.styled';
 import { MoveInfoTitle } from './DetailsMovies.styled';
-import { MovieInfo } from 'components/MoveInfo/MovieInfo';
+import { MovieInfo } from 'components/MovieComponent/MoveInfo/MovieInfo';
 import {
   BackButton,
   BackButtonIcon,
-} from 'components/Styles/BackLink.styled';
+} from 'components/MovieComponent/BackButton/BackButton.styled';
 import { LoaderSpinner } from 'components/Loader/Loader';
 import { MovieData, AddListItem } from './DetailsMovies.styled';
 

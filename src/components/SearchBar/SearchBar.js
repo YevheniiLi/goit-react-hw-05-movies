@@ -1,12 +1,12 @@
 import { Formik } from 'formik';
 import {
-  SearchingForm,
+  SearchForm,
   SearchFormInput,
   SearchFormBtn,
   SearchFormBtnIcon,
-} from './SearchForm.styled';
+} from './SearchBar.styled';
 
-export const SearchForm = ({ onSubmit, value }) => {
+export const SearchBar = ({ onSubmit, value }) => {
   return (
     <Formik
       initialValues={{ query: value ?? '' }}
@@ -14,7 +14,7 @@ export const SearchForm = ({ onSubmit, value }) => {
         onSubmit(values);
       }}
     >
-      <SearchingForm>
+      <SearchForm>
         <SearchFormInput
           type="text"
           name="query"
@@ -23,7 +23,7 @@ export const SearchForm = ({ onSubmit, value }) => {
         <SearchFormBtn type="submit">
           <SearchFormBtnIcon />
         </SearchFormBtn>
-      </SearchingForm>
+      </SearchForm>
     </Formik>
   );
 };

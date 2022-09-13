@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Form, Field } from 'formik';
 import { FaSearch } from 'react-icons/fa';
 
-export const SearchingForm = styled(Form)`
+export const SearchForm = styled(Form)`
   max-width: 450px;
   display: flex;
   justify-content: center;

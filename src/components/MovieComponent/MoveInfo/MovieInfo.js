@@ -1,19 +1,19 @@
 import PropTypes from 'prop-types';
-import { Genres } from 'components/Genres/Genres';
+import { Genres } from 'components/MovieComponent/Genres/Genres';
 import {
   MovieInfoCard,
   MovieInfoImg,
   MovieInfoTitle,
-  MovieInfoBlock,
-  PreInfoTitle,
+  MovieInfoWrapper,
+  MoviePreTitle,
 } from './MovieInfo.styled';
 
-const yearNormalize = value => {
+const filmYear = value => {
   const year = value.slice(0, 4);
   return year;
 };
 
-const ratingNormalize = value => {
+const filmRate = value => {
   const rating = value * 10;
   return rating.toFixed(1) + '%';
 };
@@ -34,18 +34,18 @@ export const MovieInfo = ({ movie }) => {
         <MovieInfoTitle>
           {movie.title}
           {'  '}
-          <span>({yearNormalize(movie.release_date)})</span>
+          <span>({filmYear(movie.release_date)})</span>
         </MovieInfoTitle>
-        <MovieInfoBlock>
-          Rating: <span>{ratingNormalize(movie.vote_average)}</span>
-        </MovieInfoBlock>
-        <MovieInfoBlock>
-          <PreInfoTitle>Overview:</PreInfoTitle> {movie.overview}
-        </MovieInfoBlock>
-        <MovieInfoBlock>
-          <PreInfoTitle>Genres:</PreInfoTitle>
+        <MovieInfoWrapper>
+          Rating: <span>{filmRate(movie.vote_average)}</span>
+        </MovieInfoWrapper>
+        <MovieInfoWrapper>
+          <MoviePreTitle>Overview:</MoviePreTitle> {movie.overview}
+        </MovieInfoWrapper>
+        <MovieInfoWrapper>
+          <MoviePreTitle>Genres:</MoviePreTitle>
           {<Genres movieGenres={movie.genres} />}
-        </MovieInfoBlock>
+        </MovieInfoWrapper>
       </div>
     </MovieInfoCard>
   );
