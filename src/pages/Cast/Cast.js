@@ -11,7 +11,10 @@ export default function Cast() {
       getCredits(movieId).then(result => {
         setCredits(result.data.cast);
       });
-    }, [movieId]);
+    }, 
+    [movieId]);
 
-    return <>{credits && <CastList credits={credits} />}</>;
+    return <>
+    {credits && <CastList credits={credits} />}
+          </>;
 }

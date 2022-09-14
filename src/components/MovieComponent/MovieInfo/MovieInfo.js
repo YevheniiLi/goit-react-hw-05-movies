@@ -7,6 +7,7 @@ import {
   MovieInfoWrapper,
   MoviePreTitle,
 } from './MovieInfo.styled';
+import { Box } from 'Box';
 
 const filmYear = value => {
   const year = value.slice(0, 4);
@@ -21,6 +22,7 @@ const filmRate = value => {
 
 export const MovieInfo = ({ movie }) => {
   return (
+
     <MovieInfoCard>
       <MovieInfoImg
         src={
@@ -30,7 +32,7 @@ export const MovieInfo = ({ movie }) => {
         }
         alt=""
       />
-      <div>
+      <Box display='grid' alignContent='strech'>
         <MovieInfoTitle>
           {movie.title}
           {'  '}
@@ -46,7 +48,7 @@ export const MovieInfo = ({ movie }) => {
           <MoviePreTitle>Genres:</MoviePreTitle>
           {<Genres movieGenres={movie.genres} />}
         </MovieInfoWrapper>
-      </div>
+      </Box>
     </MovieInfoCard>
   );
 };

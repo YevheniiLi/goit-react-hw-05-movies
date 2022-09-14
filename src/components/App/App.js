@@ -6,7 +6,7 @@ import { GlobalStyle } from 'GlobalStyle';
 
 const Home = lazy(() => import('pages/Home/Home'));
 const Movies = lazy(() => import('pages/Movies/Movies'));
-const DetailsMovies = lazy(() => import('pages/DetailsMovies/DetailsMovies'));
+const DetailsMovies = lazy(() => import('pages/MoviesDetails/MoviesDetails'));
 const Cast = lazy(() => import('pages/Cast/Cast'));
 const Reviews = lazy(() => import('pages/Reviews/Reviews'));
 

@@ -26,7 +26,7 @@ export default function Movies() {
 
   const handlerSubmit = value => {
     if (value.query.trim() === '') {
-      toast('Please, enter a word', {});
+      toast('Please, enter movie name!', {});
       return;
     } else {
       const nextParams = value.query !== '' ? { name: value.query } : {};
@@ -36,7 +36,7 @@ export default function Movies() {
 
   return (
     <MoviesContainer>
-      <MainTitle>search movie</MainTitle>
+      <MainTitle>Search your movie</MainTitle>
       <SearchBar onSubmit={handlerSubmit} value={searchParams.get('name')} />
       <MoviesList movies={searchResult} />
     </MoviesContainer>

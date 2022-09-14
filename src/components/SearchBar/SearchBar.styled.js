@@ -21,15 +21,14 @@ export const SearchFormInput = styled(Field)`
   padding: 10px 20px;
   outline: none;
   border: none;
-  color: ${p => p.theme.colors.text};
+  color: ${p => p.theme.colors.black};
   background-color: transparent;
 
   ::placeholder {
-    color: ${p => p.theme.colors.text};
+    color: ${p => p.theme.colors.silver};
   }
 `;
 
-// SearchForm Button
 export const SearchFormBtn = styled.button`
   display: flex;
   align-items: center;
@@ -38,11 +37,12 @@ export const SearchFormBtn = styled.button`
   border: none;
   outline: none;
   background-color: transparent;
-  color: ${p => p.theme.colors.text};
+  color: ${p => p.theme.colors.green};
   transition: color 450ms ease-in-out;
 
   :hover {
-    color: ${p => p.theme.colors.accent};
+    color: ${p => p.theme.colors.red};
+    cursor: pointer;
   }
 `;
 

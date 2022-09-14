@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const MovieData = styled.div`
-  max-width: 768px;
+  max-width: 1280px;
 `;
 
 export const AddListItem = styled.li`

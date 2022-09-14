@@ -15,7 +15,7 @@ export const MovieInfoImg = styled.img`
   margin-bottom: 20px;
 `;
 
-export const MovieInfoTitle = styled.h2`
+export const MovieInfoTitle = styled.h1`
   margin-bottom: 10px;
   text-transform: uppercase;
   color: ${p => p.theme.colors.black};
@@ -23,10 +23,11 @@ export const MovieInfoTitle = styled.h2`
 
 export const MovieInfoWrapper = styled.div`
   margin-bottom: 10px;
-  color: ${p => p.theme.colors.info_block};
+  color: ${p => p.theme.colors.black};
 `;
 
 export const MoviePreTitle = styled.h5`
   text-transform: uppercase;
   color: ${p => p.theme.colors.red};
+  margin-bottom: 10px;
 `;

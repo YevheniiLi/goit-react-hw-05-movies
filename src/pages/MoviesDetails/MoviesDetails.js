@@ -2,14 +2,14 @@ import { useState, useEffect, Suspense } from 'react';
 import { useParams, Link, Outlet, useLocation } from 'react-router-dom';
 import { getMoveDetails } from 'components/api/api';
 // import { MovieInfoBlock } from 'components/MoveInfo/MovieInfo.styled';
-import { MoveInfoTitle } from './DetailsMovies.styled';
-import { MovieInfo } from 'components/MovieComponent/MoveInfo/MovieInfo';
+import { MoveInfoTitle } from './MoviesDetails.styled';
+import { MovieInfo } from 'components/MovieComponent/MovieInfo/MovieInfo';
 import {
   BackButton,
   BackButtonIcon,
 } from 'components/MovieComponent/BackButton/BackButton.styled';
 import { LoaderSpinner } from 'components/Loader/Loader';
-import { MovieData, AddListItem } from './DetailsMovies.styled';
+import { MovieData, AddListItem } from './MoviesDetails.styled';
 
 export default function DetailsMovies() {
   const { movieId } = useParams();
